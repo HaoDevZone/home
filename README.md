@@ -3,97 +3,15 @@ title: "About"
 permalink: "/about/"
 layout: page
 ---
+# 关于我
+嗨！一个码了 10 年 Android 的老司机，专攻 JNI、C++ 和高性能系统。白天，我在代码里“救火”：搞定 IM SDK 5 万+ 消息/秒、延迟 <10ms 的高并发挑战，或者用 CameraX 优化人脸检测到 30 FPS、耗时 <10ms。晚上，我可能在研究股票交易的 K 线图，或者拿着相机拍星空。生活嘛，总得有点“跨界”的乐趣！
 
-## Installation
+## 关于本博客
 
-Just fork this [repository](https://github.com/niklasbuschmann/contrast) and adjust the `_config.yml` to use with [Github Pages](https://pages.github.com/) and your page is done.
+这不是一本“编程圣经”，而是我把开发中踩的坑、攒的经验整理成笔记，分享给你。写 IM SDK 时，为了让消息通知快到 <5ms，我翻遍了 Netty 和 C++ 队列的源码；做 CameraX 时，为了帧率稳在 30 FPS，我跟 YUV_420_888 “battle” 了无数回。这些实战心得都在这儿！  
+但不止编程哦，未来可能聊聊交易策略（如何不被“割韭菜”），或者摄影技巧（怎么拍出银河）。谁知道呢？世界这么大，我想多试试！
 
-## Features
+## 联系我
 
- - supports dark mode on macOS Mojave
- - optional sidebar
- - MathJax support
- - no external ressources
- - included archive page
- - supports pagination
- - feed generation
- - responsive
- - syntax highlighting
- - supports comments via [disqus](https://disqus.com/) or [isso](http://posativ.org/isso/)
+我期待与 Android 和 JNI 社区的开发者交流。你可以通过 [GitHub: github.com/HaoDevZone] 或邮箱 [shi_hao@outlook.com] 联系我。欢迎一起探讨 Android 性能优化、JNI 开发或面试经验！
 
-## Based on
-
-- [Hyde](https://github.com/poole/hyde)
-- [Minima](https://github.com/jekyll/minima)
-- [Lagrange](https://github.com/LeNPaul/Lagrange)
-- [Font Awesome](http://fontawesome.io/)
-- [KaTeX](https://katex.org/)
-- [Pygments](https://github.com/richleland/pygments-css)
-
-## Installation (jekyll-remote-theme method)
-
-You can use this theme with the `jekyll-remote-theme` plugin. Just create an empty repo, copy over the `index.html` file and add this to your `_config.yml`:
-
-```yaml
-remote_theme: niklasbuschmann/contrast@v2.11
-
-plugins:
-  - jekyll-remote-theme
-```
-
-Note: to enable icons you also need to copy over the `_data` folder.
-
-## Config
-
-Your `_config.yml` could for example look like this:
-
-```yaml
-title: "Blog Title"
-author: "Blog Author"
-description: "My personal blog about ... something"
-permalink: /:title/
-lang: "en"
-excerpt_separator: "\n\n\n"
-date_format: "%B %d, %Y"
-
-# Layout
-
-show_excerpts: true        # show article excerpts on the home page
-show_frame: true           # adds a gray frame to the site
-show_sidebar: false        # show a sidebar instead of the usual header
-
-# Menu
-
-navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.html"}
-  - {file: "README.md"}
-
-external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
-  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
-
-comments:
-#  disqus_shortname: ""    # see https://disqus.com/
-#  isso_domain: ""         # see https://posativ.org/isso/
-
-plugins:
- - jekyll-feed
-
-```
-
-## MathJax
-
-Contrast comes preinstalled with a leightweight alternative to MathJax called [KaTeX](https://katex.org/). To display equations in a post simply set `mathjax: true` in the article's front matter.
-
-## License
-
-[public domain](http://unlicense.org/)
-
-## Screenshots
-
-![screenshot](https://user-images.githubusercontent.com/4943215/109431850-cd711780-7a08-11eb-8601-2763f2ee6bb4.png)
-
-![screenshot](https://user-images.githubusercontent.com/4943215/109431832-b6cac080-7a08-11eb-9c5e-a058680c23a1.png)
-
-![screenshot](https://user-images.githubusercontent.com/4943215/73125194-5f0b8b80-3fa4-11ea-805c-8387187503ad.png)
