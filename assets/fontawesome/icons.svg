@@ -1,20 +1,41 @@
----
----
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--
 Font Awesome Free 5.12.0 by @fontawesome - https://fontawesome.com
 License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
 -->
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景：Material 3 深色调（深蓝） -->
+  <rect width="64" height="64" fill="#1A237E" />
 
+  <!-- 萤火虫头部：圆形，Material 3 红色调 -->
+  <circle cx="32" cy="20" r="6" fill="#EF5350" />
 
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-{% assign keys = 'navigation,external' | split: ',' %}
-{% for key in keys %}
-{% for link in site[key] %}
-  {% assign icon = link.icon %}
-  {% assign svg = site.data.font-awesome.icons[icon].svg | first %}
-  <symbol id="{{ icon }}" viewBox="0 0 {{ svg[1].width }} {{ svg[1].height }}"><path d="{{ svg[1].path }}" /></symbol>
-{% endfor %}
-{% endfor %}
+  <!-- 萤火虫翅膀：椭圆，Material 3 橙色调，半透明 -->
+  <ellipse cx="22" cy="32" rx="12" ry="6" fill="#FFCA28" opacity="0.8" />
+  <ellipse cx="42" cy="32" rx="12" ry="6" fill="#FFCA28" opacity="0.8" />
+
+  <!-- 萤火虫身体：细长椭圆，连接头部和尾部 -->
+  <ellipse cx="32" cy="36" rx="4" ry="12" fill="#EF5350" />
+
+  <!-- 萤火虫尾部发光点：小圆形，Material 3 黄色调，带微妙光晕 -->
+  <circle cx="32" cy="48" r="4" fill="#FFEE58">
+    <!-- 光晕效果 -->
+    <animate attributeName="r" values="4;6;4" dur="1.5s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- 萤火虫触角：简化为两条细线 -->
+  <line x1="32" y1="14" x2="26" y2="8" stroke="#EF5350" stroke-width="1" />
+  <line x1="32" y1="14" x2="38" y2="8" stroke="#EF5350" stroke-width="1" />
 </svg>
+
+<!--<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">-->
+<!--{% assign keys = 'navigation,external' | split: ',' %}-->
+<!--{% for key in keys %}-->
+<!--{% for link in site[key] %}-->
+<!--  {% assign icon = link.icon %}-->
+<!--  {% assign svg = site.data.font-awesome.icons[icon].svg | first %}-->
+<!--  <symbol id="{{ icon }}" viewBox="0 0 {{ svg[1].width }} {{ svg[1].height }}"><path d="{{ svg[1].path }}" /></symbol>-->
+<!--{% endfor %}-->
+<!--{% endfor %}-->
+<!--</svg>-->
