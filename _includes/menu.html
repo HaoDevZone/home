@@ -4,7 +4,12 @@
   {%- assign url = item.url | default: node.url -%}
   {%- assign title = item.title | default: node.title -%}
   <a href="{{ url | relative_url }}" {% if url == page.url %}class="selected"{% endif %}>
-    {%- if item.icon -%}<svg aria-label="{{ title }}" class="icon"><use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{ item.icon }}"></use></svg>{%- else -%}{{ title }}{%- endif -%}
+    {%- if item.icon -%}
+    <svg aria-label="{{ title }}" class="icon">
+<!--    <use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{ item.icon }}"></use>-->
+      <use xlink:href="https://raw.githubusercontent.com/HaoDevZone/home/refs/heads/master/assets/fontawesome/icons.svg#{{ item.icon }}"></use>
+    </svg>
+    {%- else -%}{{ title }}{%- endif -%}
   </a>
 {%- endfor -%}
 </nav>
